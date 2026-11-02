@@ -1,0 +1,98 @@
+<script type="module" defer>
+    // property of HouseInSpace and SpaceLabs
+    import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+    Chatbot.init({
+        "n8nChatUrl": "https://camelia-strangulable-shenita.ngrok-free.dev/webhook/3389c59f-873d-4775-8e05-49720eb3222c/chat",
+        "metadata": {},
+        "theme": {
+            "button": {
+                "backgroundColor": "#C84B31",
+                "right": 20,
+                "bottom": 20,
+                "size": 50,
+                "iconColor": "#ffffff",
+                "customIconSrc": "https://www.svgrepo.com/show/440526/space-ship.svg",
+                "customIconSize": 51,
+                "customIconBorderRadius": 15,
+                "autoWindowOpen": {
+                    "autoOpen": true,
+                    "openDelay": 1
+                },
+                "borderRadius": "rounded"
+            },
+            "tooltip": {
+                "showTooltip": true,
+                "tooltipMessage": "Your home in mars? , The moon? you select!!",
+                "tooltipBackgroundColor": "#fff9f6",
+                "tooltipTextColor": "#1c1c1c",
+                "tooltipFontSize": 15
+            },
+            "direction": "ltr",
+            "chatWindow": {
+                "borderRadiusStyle": "rounded",
+                "avatarBorderRadius": 25,
+                "messageBorderRadius": 6,
+                "showTitle": true,
+                "title": "SpaceLabs™ [v1.7]",
+                "titleAvatarSrc": "https://www.svgrepo.com/show/440491/flag.svg",
+                "avatarSize": 40,
+                "welcomeMessage": "Welcome to  SpaceLabs! , ¡Start writting something or press a flash prompt for start creating! 🌌",
+                "errorMessage": "An error has ocurred ",
+                "backgroundColor": "#ffffff",
+                "height": 600,
+                "width": 400,
+                "fontSize": 16,
+                "starterPrompts": [
+                    "Create a home in mars",
+                    "Create a home in the space 🌌",
+                    "Create a home in the moon"
+                ],
+                "starterPromptFontSize": 15,
+                "renderHTML": false,
+                "clearChatOnReload": false,
+                "showScrollbar": false,
+                "botMessage": {
+                    "backgroundColor": "#FCEAE6",
+                    "textColor": "#000000",
+                    "showAvatar": true,
+                    "avatarSrc": "https://www.svgrepo.com/show/487974/user-setting.svg",
+                    "showCopyToClipboardIcon": false
+                },
+                "userMessage": {
+                    "backgroundColor": "#FFF3E0",
+                    "textColor": "#050505",
+                    "showAvatar": true,
+                    "avatarSrc": "https://www.svgrepo.com/show/532363/user-alt-1.svg"
+                },
+                "textInput": {
+                    "placeholder": "type something",
+                    "backgroundColor": "#ffffff",
+                    "textColor": "#1e1e1f",
+                    "sendButtonColor": "#C84B31",
+                    "maxChars": 300,
+                    "maxCharsWarningMessage": "You went over the 300-character limit; use fewer characters.",
+                    "autoFocus": false,
+                    "borderRadius": 6,
+                    "sendButtonBorderRadius": 50
+                },
+                "uploadsConfig": {
+                    "enabled": true,
+                    "acceptFileTypes": [
+                        "jpeg",
+                        "jpg",
+                        "png",
+                        "pdf",
+                        "stl"
+                    ],
+                    "maxFiles": 5,
+                    "maxSizeInMB": 10
+                },
+                "voiceInputConfig": {
+                    "enabled": false,
+                    "maxRecordingTime": 15,
+                    "recordingNotSupportedMessage": "To record audio, use modern browsers like Chrome or Firefox that support audio recording"
+                }
+            }
+        }
+    });
+</script>
